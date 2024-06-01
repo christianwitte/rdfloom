@@ -25,11 +25,13 @@ class EntryModel {
     }
 }
 
-export type SEProps = {
+export interface SEProps {
     lookupPrefix: LookupFunction
 }
-export type UEProps = {
+export interface UEProps {
     lookup: AutoSuggestURI
 }
+// eslint-disable-next-line no-unused-vars
 type LookupFunction = (key: string) => string;
+// eslint-disable-next-line no-unused-vars
 type AutoSuggestURI = (text: string) => NamedNode[];

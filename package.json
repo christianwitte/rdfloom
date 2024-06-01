@@ -1,7 +1,7 @@
 {
   "name": "rdfloom",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,11 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@zazuko/prefixes": "^2.2.0",
+    "@zazuko/vocabularies": "^2.1.0",
+    "n3": "^1.17.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "n3": "^1.17.3",
-    "@zazuko/prefixes": "^2.2.0",
-    "@zazuko/vocabularies": "^2.1.0"
+    "tslog": "^4.9.2"
   },
   "devDependencies": {
     "@types/n3": "^1.16.4",
@@ -24,9 +25,13 @@
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
